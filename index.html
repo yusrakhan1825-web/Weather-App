@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="weather-app">
+
+        <header class="header">
+            <h1>☀️ Sunny Skies</h1>
+            <p>Your little sunshine, wherever you go!</p>
+        </header>
+
+        <section class="search-section">
+            <form id="searchForm">
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter your city..."
+                    aria-label="City name"
+                    required
+                >
+
+                <button type="submit">Search 🔍</button>
+            </form>
+        </section>
+
+        <p id="message" role="status">
+            Search a city to discover its weather! 🌈
+        </p>
+
+        <section id="weatherResult" class="weather-card" hidden>
+
+            <h2 id="cityName">City Name</h2>
+            <p id="weatherDescription">Weather condition</p>
+
+            <div class="temperature">
+                <span id="weatherIcon">🌤️</span>
+                <span id="temperature">--°C</span>
+            </div>
+
+            <div class="weather-details">
+
+                <div class="detail-card">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <h3 id="humidity">--%</h3>
+                </div>
+
+                <div class="detail-card">
+                    <span>💨</span>
+                    <p>Wind Speed</p>
+                    <h3 id="windSpeed">-- km/h</h3>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            Made with ☀️ and a little JavaScript magic
+        </footer>
+
+    </main>
+
+    <!-- JavaScript file -->
+    <script src="app.js"></script>
+
+</body>
+</html>
